@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <main className="min-h-screen py-16">
@@ -8,7 +10,7 @@ export default function About() {
           </h1>
           
           <p className="text-xl leading-relaxed mb-12 text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            We are passionate about creating innovative web solutions that make a difference in people's lives.
+            We are passionate about creating innovative web solutions that make a difference in people&apos;s lives.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -28,11 +30,9 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center gap-8">
-            
-            
-            <a 
+            <Link 
               href="/" 
-              className="button group hover:scale-105 transition-all duration-300"
+              className="button group hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -47,7 +47,7 @@ export default function About() {
                 />
               </svg>
               Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>
